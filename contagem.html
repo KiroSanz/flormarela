@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Personalizado</title>
+    <link rel="stylesheet" href="/css/contagem.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Carrossel de fotos -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/bochecha.jpg" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/kis.jpg" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/fro.jpg" alt="Foto 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/dentinho.jpg" alt="Foto 4">
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <!-- Contador -->
+        <div class="counters">
+            <div class="counter-box" id="years">
+                <div class="number">0</div>
+                <div class="label">Anos</div>
+            </div>
+            <div class="counter-box" id="months">
+                <div class="number">0</div>
+                <div class="label">Meses</div>
+            </div>
+            <div class="counter-box" id="days">
+                <div class="number">0</div>
+                <div class="label">Dias</div>
+            </div>
+            <div class="counter-box" id="hours">
+                <div class="number">0</div>
+                <div class="label">Horas</div>
+            </div>
+            <div class="counter-box" id="minutes">
+                <div class="number">0</div>
+                <div class="label">Minutos</div>
+            </div>
+            <div class="counter-box" id="seconds">
+                <div class="number">0</div>
+                <div class="label">Segundos</div>
+            </div>
+        </div>
+
+        <!-- Mensagem fixa -->
+        <div class="message">
+            Quero começar dizendo que isso não é grandes coisas, é apenas um presente, a famosa lembrancinha kkk, mas foi tudo feito com muito amor e dedicação. Só quero te agradecer por tudo, por cada esforçozinho pela gente, por mim, pelo nosso futuro, nada disso ta sendo em vão.
+        </div>
+
+        <!-- Mensagens que aparecem com o scroll -->
+        <div class="scroll-messages">
+            <div class="scroll-message" id="scroll-message1">
+                Sei que eu sou meio manhoso as vezes, mas é por que eu gosto muito da sua companhia, você é muito legal, eu te amo demais
+            </div>
+            <div class="scroll-message" id="scroll-message2">
+                Você sempre faz muito por nós, sempre cuidando mim, sempre me auxiliando em tudo.
+            </div>
+            <div class="scroll-message" id="scroll-message3">
+                Posso dizer que sem você eu não seria nada, eu estaria completamente perdido, mas você veio como uma luz no meu caminho, iluminando tudo que era canto.
+            </div>
+            <div class="scroll-message" id="scroll-message4">
+                Você foi o acaso mais, esperado da minha vida, eu rezei tanto pra Deus pra ter alguém que fosse cada coisinha que você tira 10 se fosse pra dar nota, obrigado por tudo, você é o amor da minha vida, eu te amo.
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascripts/contagem.js"></script>
+</body>
+</html>

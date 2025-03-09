@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Amor Interativa</title>
+    <link rel="stylesheet" href="/css/barra.css">
+</head>
+<body>
+    <!-- Imagem acima da box -->
+    <img src="/img/nós.jpg" alt="Foto" class="foto">
+
+    <!-- Box da barra e botões -->
+    <div class="container">
+        <h1>O quanto você me ama?</h1>
+        <!-- Barra de progresso -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p id="loveLevel">Nível de Amor: 0%</p>
+        <!-- Botões -->
+        <div class="botoes">
+            <button id="increaseBtn">💓</button>
+            <button id="decreaseBtn">💔</button>
+        </div>
+    </div>
+    <script src="/javascripts/barra.js"></script>
+</body>
+</html>

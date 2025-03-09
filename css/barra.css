@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000 0%, #220000 50%, #000000 100%);
+    display: flex;
+    flex-direction: column; /* Alinhar elementos verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: flex-start; /* Alinhar no topo */
+    height: 100vh;
+    padding-top: 20px; /* Espaçamento no topo */
+}
+
+
+/* Estilo da imagem */
+.foto {
+    width: 100%; /* Largura da imagem */
+    max-width: 300px; /* Tamanho máximo */
+    height: 400px; /* Altura automática */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    margin-top: 15px;
+}
+
+/* Box da barra e botões */
+.container {
+    background-color: #0000009f;
+    padding: 30px;
+    border: 1px solid rgba(255, 78, 78, 0.295);
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px 5px rgba(245, 119, 119, 0.11);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e011;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    width: 0%; /* Barra começa em 0% */
+    height: 100%;
+    background-color: #ff3c3c;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+#loveLevel {
+    font-size: 18px;
+    color: #ff2e2e;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 190px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}

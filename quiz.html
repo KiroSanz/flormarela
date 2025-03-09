@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz para Gigika</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <!-- Pergunta 1 -->
+        <div id="pergunta1">
+            <h2>Qual é a nossa música favorita?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta1', 'Love Love- Gilsons', 'pergunta2')">Love Love- Gilsons</button>
+                <button onclick="verificarResposta('pergunta1', 'November Rain - Guns N Rose', 'pergunta2')">November Rain - Guns N Rose</button>
+                <button onclick="verificarResposta('pergunta1', 'Outra Vida - Armandinho', 'pergunta2')">Outra Vida - Armandinho</button>
+            </div>
+        </div>
+        
+        <!-- Pergunta 2 -->
+        <div id="pergunta2" style="display: none;">
+            <h2>O que me deu vontade de fazer quando te vi pela primeira vez?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta2', 'Abraçar você', 'pergunta3')">Abraçar você</button>
+                <button onclick="verificarResposta('pergunta2', 'Chorar', 'pergunta3')">Chorar</button>
+                <button onclick="verificarResposta('pergunta2', 'Correr pra dentro do ônibus', 'pergunta3')">Correr pra dentro do ônibus</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div id="pergunta3" style="display: none;">
+            <h2>Qual é a primeira coisa que eu disse pra você quando a gente se conheceu?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta3', 'Oie', 'pergunta4')">Oie</button>
+                <button onclick="verificarResposta('pergunta3', 'Cê gosta de comer o quê?', 'pergunta4')">Cê gosta de comer o quê?</button>
+                <button onclick="verificarResposta('pergunta3', 'Quem é essa daí?', 'pergunta4')">Quem é essa daí?</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div id="pergunta4" style="display: none;">
+            <h2>Qual foi o presente mais significativo que eu te dei?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta4', 'Buquê', 'pergunta5')">Buquê</button>
+                <button onclick="verificarResposta('pergunta4', 'Meias', 'pergunta5')">Meias</button>
+                <button onclick="verificarResposta('pergunta4', 'Beijinhos', 'pergunta5')">Beijinhos</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div id="pergunta5" style="display: none;">
+            <h2>Onde foi nosso primeiro date romântico?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta5', 'Cinema', 'pergunta6')">Cinema</button>
+                <button onclick="verificarResposta('pergunta5', 'Starbucks', 'pergunta6')">Starbucks</button>
+                <button onclick="verificarResposta('pergunta5', 'Outback', 'pergunta6')">Outback</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div id="pergunta6" style="display: none;">
+            <h2>Qual é a primeira coisa que faço quando acordo do seu lado?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta6', 'Te beijo', 'pergunta7')">Te beijo</button>
+                <button onclick="verificarResposta('pergunta6', 'Te abraço', 'pergunta7')">Te abraço</button>
+                <button onclick="verificarResposta('pergunta6', 'Te cheiro', 'pergunta7')">Te cheiro</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div id="pergunta7" style="display: none;">
+            <h2>Qual foi a primeira foto que eu te mandei?</h2>
+            <div class="botoes">
+                <button onclick="verificarResposta('pergunta7', 'Foto pelado 😈', 'fim')">Foto pelado 😈</button>
+                <button onclick="verificarResposta('pergunta7', 'Foto sorrindo', 'fim')">Foto sorrindo</button>
+                <button onclick="verificarResposta('pergunta7', 'Foto minha', 'fim')">Foto minha</button>
+            </div>
+        </div>
+        
+        <!-- Tela Final -->
+        <div id="fim" style="display: none;">
+            <h2>Parabéns! Você completou o quiz! Meu amooooooo!!!!❤️</h2>
+            <p>Sua pontuação: <span id="pontuacao-final">0</span> de 7 (como esperado da minha bebê)</p>
+        </div>
+    </div>
+
+    <div id="coracoes"></div>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+    background: linear-gradient(to bottom, #000000 0%, #220000 50%, #000000 100%);
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff00;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin-top: 25%;
+}
+
+/* Estilos do carrossel */
+.carousel {
+    position: relative;
+    width: 47%;
+    max-width: 600px; /* Largura máxima do carrossel */
+    margin: 0 auto 20px; /* Centraliza e adiciona espaço abaixo */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Controles de navegação */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.281);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos do contador e mensagem (mantidos) */
+.counters {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.counter-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #3b01014f;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.counter-box .number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.counter-box .label {
+    font-size: 0.8em;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.message {
+    font-size: 1.2em;
+    margin-top: 30px;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.scroll-messages {
+    margin-top: 40px;
+}
+
+.scroll-message {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.scroll-message.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
